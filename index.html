@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE 
+SHA=$(gh 
+CONTENT=$(echo ad>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="robots" content="noindex, nofollow" />
@@ -20,6 +20,7 @@
       justify-content: center;
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
+      transition: background 0.3s ease, color 0.3s ease;
     }
     .center {
       text-align: center;
@@ -37,6 +38,15 @@
       font-size: 15px;
       color: #9a938c;
       font-style: italic;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1c1b1a;
+        color: #e8e4df;
+      }
+      p {
+        color: #636058;
+      }
     }
   </style>
 </head>
